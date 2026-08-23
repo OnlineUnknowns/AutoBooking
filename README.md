@@ -152,7 +152,6 @@ This tool automates interactions with third-party appointment/visa provider webs
 
 <a href="https://wa.me/201286669272"><img src="https://img.shields.io/badge/WHATSAPP-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 <a href="https://t.me/IQROUTER"><img src="https://img.shields.io/badge/TELEGRAM-2AABEE?style=for-the-badge&logo=telegram&logoColor=white"/></a>
-<a href="#"><img src="https://img.shields.io/badge/YOUTUBE-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/></a>
 
 </div>
 
