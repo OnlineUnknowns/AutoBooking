@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Auto Bot — Windows Automation for Visa Appointment Booking</title>
+<meta name="description" content="Booking Auto Bot is a Windows desktop application that monitors visa appointment portals across 12 countries and 7 booking providers, alerts you on Telegram the instant a slot opens, and manages client cases through a built-in Office Operations layer.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Booking Auto Bot — Windows Automation for Visa Appointment Booking">
+<meta property="og:description" content="Background monitoring across BLS, TLS, VFS, Prenotami, GVC World, IVAC and Goethe-Institut. Instant Telegram alerts. Built-in Office Operations CRM.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Booking Auto Bot — Windows Automation for Visa Appointment Booking">
+<meta name="twitter:description" content="Never miss a visa appointment slot again. Background monitoring, instant Telegram alerts, and a built-in Office Operations CRM.">
+<meta name="twitter:image" content="assets/og-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="siteNav">
+  <div class="nav__inner">
+    <a href="#main" class="nav__brand" aria-label="Booking Auto Bot — home">
+      <span class="nav__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </span>
+      <span class="nav__name">BOOKING AUTO<span class="nav__name-accent">BOT</span></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#product">Product</a>
+      <a href="#coverage">Coverage</a>
+      <a href="#features">Features</a>
+      <a href="#office">Office Layer</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="#download" class="btn btn--ghost btn--sm">Download</a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#product">Product</a>
+    <a href="#coverage">Coverage</a>
+    <a href="#features">Features</a>
+    <a href="#office">Office Layer</a>
+    <a href="#faq">FAQ</a>
+    <a href="#download" class="btn btn--primary btn--sm">Download for Windows</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Advanced Booking Platform</p>
+        <h1 class="hero__title">
+          The complete platform
+          for automated bookings.
+        </h1>
+        <p class="hero__lede">
+          VALUE BOTS is a full automation platform for managing accounts, teams, proxies, files,
+          and appointment bookings — <strong>BLS, VFS and TLS</strong> supported — all from one powerful desktop application.
+          From login to final submission, every step is handled automatically.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#download" class="btn btn--primary btn--lg" id="heroDownloadBtn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            Download for Windows
+          </a>
+          <a href="https://t.me/IQROUTER" class="btn btn--ghost btn--lg" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 3 10.5l6.5 2.5"/><path d="M21 3 13 21l-3.5-8L3 10.5"/></svg>
+            Talk to us on Telegram
+          </a>
+        </div>
+
+        <p class="hero__meta">
+          <span>Desktop application</span>
+          <span class="hero__meta-sep" aria-hidden="true">·</span>
+          <span>SaaS infrastructure</span>
+          <span class="hero__meta-sep" aria-hidden="true">·</span>
+          <span>Continuous updates &amp; synchronization</span>
+        </p>
+      </div>
+
+      <!-- Signature product visualization: live dashboard mock -->
+      <div class="hero__visual">
+        <div class="app-window" role="img" aria-label="VALUE BOTS dashboard showing automated booking sessions, account management, and live booking status">
+          <div class="app-window__titlebar">
+            <div class="app-window__title">
+              <span class="app-window__dot" aria-hidden="true"></span>
+              VALUE BOTS — Dashboard
+            </div>
+            <div class="app-window__controls" aria-hidden="true">
+              <span>&#8211;</span><span>&#9633;</span><span>&#10005;</span>
+            </div>
+          </div>
+
+          <div class="app-window__body">
+            <div class="app-stats" id="appStats">
+              <div class="app-stat">
+                <span class="app-stat__label">Running tasks</span>
+                <span class="app-stat__value" data-count-to="6">0</span>
+              </div>
+              <div class="app-stat">
+                <span class="app-stat__label">Accounts</span>
+                <span class="app-stat__value" data-count-to="18">0</span>
+              </div>
+              <div class="app-stat">
+                <span class="app-stat__label">Success rate</span>
+                <span class="app-stat__value" data-count-to="98" data-suffix="%">0%</span>
+              </div>
+            </div>
+
+            <div class="app-tasks">
+              <div class="app-task">
+                <span class="provider-tag provider-tag--bls">BLS</span>
+                <span class="app-task__label">Casablanca &rarr; Spain</span>
+                <span class="app-task__status" data-state="monitoring">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <span class="app-task__status-text">Monitoring</span>
+                </span>
+              </div>
+              <div class="app-task">
+                <span class="provider-tag provider-tag--tls">TLS</span>
+                <span class="app-task__label">Tunis &rarr; France</span>
+                <span class="app-task__status" data-state="monitoring">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <span class="app-task__status-text">Monitoring</span>
+                </span>
+              </div>
+              <div class="app-task app-task--highlight" id="detectedTask">
+                <span class="provider-tag provider-tag--vfs">VFS</span>
+                <span class="app-task__label">Rabat &rarr; Schengen</span>
+                <span class="app-task__status" data-state="monitoring" id="detectedStatus">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <span class="app-task__status-text">Monitoring</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="app-log" id="appLog" aria-live="polite">
+              <p class="app-log__line" id="logLine">Booking workflow initialized — running automation…</p>
+            </div>
+          </div>
+
+          <div class="telegram-toast" id="telegramToast" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3 3 10.5l6.5 2.5"/><path d="M21 3 13 21l-3.5-8L3 10.5"/></svg>
+            <div>
+              <strong>Telegram</strong>
+              <span>Booking confirmed — VFS Rabat, Schengen</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT INTRODUCTION ============ -->
+  <section class="section" id="product">
+    <div class="section__inner section__inner--split">
+      <div class="section__col">
+        <p class="eyebrow">What it is</p>
+        <h2 class="section__title">One platform. Every step automated.</h2>
+        <p class="section__text">
+          VALUE BOTS is a complete automation platform — not a basic script or browser extension.
+          It handles the entire appointment booking process from login to final submission,
+          with automatic OTP handling, CAPTCHA solving, slot detection, form filling, and submission.
+        </p>
+        <p class="section__text">
+          Built for agencies and teams: manage multiple accounts, share access with your office,
+          organize files and applicant data, rotate proxies automatically, and monitor everything
+          from a <strong>live dashboard</strong> — all in one desktop application backed by
+          <strong>SaaS infrastructure</strong>.
+        </p>
+        <ul class="check-list">
+          <li>Fully automated booking — login to submission, no manual steps</li>
+          <li>BLS, VFS and TLS support across 18 countries</li>
+          <li>Built-in proxy generator with automatic IP rotation</li>
+          <li>Team system with permissions, shared accounts, and file management</li>
+        </ul>
+      </div>
+
+      <div class="section__col">
+        <div class="mini-panel">
+          <p class="mini-panel__label">Live automation log</p>
+          <div class="mini-panel__body">
+            <p class="mini-panel__row"><span class="mini-panel__tag mini-panel__tag--info">LOGIN</span> Account session established — VFS Malaysia</p>
+            <p class="mini-panel__row"><span class="mini-panel__tag mini-panel__tag--info">CAPTCHA</span> Challenge detected — resolving automatically…</p>
+            <p class="mini-panel__row"><span class="mini-panel__tag mini-panel__tag--success">SLOT</span> Appointment slot found — selecting date &amp; time</p>
+            <p class="mini-panel__row"><span class="mini-panel__tag mini-panel__tag--success">BOOKING</span> Form submitted — booking confirmed</p>
+          </div>
+          <p class="mini-panel__caption">Full automation from login to booking confirmation — every step logged in real time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KEY BENEFITS ============ -->
+  <section class="section section--tight" id="benefits">
+    <div class="section__inner">
+      <div class="benefit-list">
+        <div class="benefit">
+          <div class="benefit__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div>
+            <h3 class="benefit__title">Fully automated from start to finish</h3>
+            <p class="benefit__text">Login, OTP, CAPTCHA, slot detection, form filling, and final submission — all handled automatically with one click.</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M3 21v-1a7 7 0 0 1 7-7h4a7 7 0 0 1 7 7v1"/></svg>
+          </div>
+          <div>
+            <h3 class="benefit__title">Multi-account and team management</h3>
+            <p class="benefit__text">Run multiple accounts simultaneously and share the platform with your entire office team — with role-based permissions.</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <div>
+            <h3 class="benefit__title">Built-in proxy generator and IP rotation</h3>
+            <p class="benefit__text">Generate and manage proxies directly inside the app — with smart automatic IP rotation for every session.</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div>
+            <h3 class="benefit__title">Live dashboard and smart notifications</h3>
+            <p class="benefit__text">Monitor accounts, tasks, slots, and bookings in real time — with instant alerts for every important event.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COVERAGE: COUNTRIES ============ -->
+  <section class="section" id="coverage">
+    <div class="section__inner">
+      <div class="section__head">
+        <p class="eyebrow">Coverage</p>
+        <h2 class="section__title">Built for 18 countries. Wired into 7 booking systems.</h2>
+        <p class="section__text section__text--wide">
+          VALUE BOTS supports users operating from the following countries, each configured
+          against the specific visa portals relevant to their routes.
+        </p>
+      </div>
+
+      <div class="region-groups">
+        <div class="region-group">
+          <h3 class="region-group__title">North Africa &amp; MENA</h3>
+          <ul class="country-grid">
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/eg.png" width="24" height="18" loading="lazy" alt="">Egypt</li>
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/dz.png" width="24" height="18" loading="lazy" alt="">Algeria</li>
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/ma.png" width="24" height="18" loading="lazy" alt="">Morocco</li>
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/tn.png" width="24" height="18" loading="lazy" alt="">Tunisia</li>
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/mr.png" width="24" height="18" loading="lazy" alt="">Mauritania</li>
+          </ul>
+        </div>
+        <div class="region-group">
+          <h3 class="region-group__title">South Asia</h3>
+          <ul class="country-grid">
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/pk.png" width="24" height="18" loading="lazy" alt="">Pakistan</li>
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/in.png" width="24" height="18" loading="lazy" alt="">India</li>
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/bd.png" width="24" height="18" loading="lazy" alt="">Bangladesh</li>
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/np.png" width="24" height="18" loading="lazy" alt="">Nepal</li>
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/lk.png" width="24" height="18" loading="lazy" alt="">Sri Lanka</li>
+          </ul>
+        </div>
+        <div class="region-group">
+          <h3 class="region-group__title">Southeast Asia</h3>
+          <ul class="country-grid">
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/my.png" width="24" height="18" loading="lazy" alt="">Malaysia</li>
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/id.png" width="24" height="18" loading="lazy" alt="">Indonesia</li>
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/ph.png" width="24" height="18" loading="lazy" alt="">Philippines</li>
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/th.png" width="24" height="18" loading="lazy" alt="">Thailand</li>
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/vn.png" width="24" height="18" loading="lazy" alt="">Vietnam</li>
+          </ul>
+        </div>
+        <div class="region-group">
+          <h3 class="region-group__title">Europe &amp; Central Asia</h3>
+          <ul class="country-grid">
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/gb.png" width="24" height="18" loading="lazy" alt="">United Kingdom</li>
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/nl.png" width="24" height="18" loading="lazy" alt="">Netherlands</li>
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/tr.png" width="24" height="18" loading="lazy" alt="">Turkey</li>
+            <li class="country-chip"><img src="https://flagcdn.com/24x18/uz.png" width="24" height="18" loading="lazy" alt="">Uzbekistan</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ============ PROVIDERS ============ -->
+      <div class="providers" id="providers">
+        <h3 class="providers__title">Booking providers</h3>
+        <div class="provider-list">
+          <div class="provider-row">
+            <span class="provider-tag provider-tag--bls">BLS International</span>
+            <p>Spanish visa appointments — <code>blsspainvisa.com</code> and country-specific portals — across most MENA routes.</p>
+          </div>
+          <div class="provider-row">
+            <span class="provider-tag provider-tag--tls">TLS Contact</span>
+            <p>French, German and Belgian visa appointments via <code>tlscontact.com</code>.</p>
+          </div>
+          <div class="provider-row">
+            <span class="provider-tag provider-tag--vfs">VFS Global</span>
+            <p>Schengen and US visa appointments across multiple countries via <code>visa.vfsglobal.com</code>.</p>
+          </div>
+          <div class="provider-row">
+            <span class="provider-tag">Prenotami</span>
+            <p>The Italian government portal, <code>prenotami.esteri.it</code> — used for Tunisia routes to Italy.</p>
+          </div>
+          <div class="provider-row">
+            <span class="provider-tag">GVC World</span>
+            <p>Greece visa appointments via <code>gvcworld.eu</code> — used for Pakistan routes to Greece.</p>
+          </div>
+          <div class="provider-row">
+            <span class="provider-tag">IVAC</span>
+            <p>Indian Visa Application Centers — used for Bangladesh routes to India.</p>
+          </div>
+          <div class="provider-row">
+            <span class="provider-tag">Goethe-Institut</span>
+            <p>German language exam bookings (A1&ndash;C2) via <code>goethe.de</code> — used for Tunisia routes to Germany.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section" id="features">
+    <div class="section__inner">
+      <div class="section__head">
+        <p class="eyebrow">Under the hood</p>
+        <h2 class="section__title">A complete automation platform, built to perform.</h2>
+      </div>
+
+      <div class="feature-systems">
+        <article class="feature-system">
+          <div class="feature-system__head">
+            <span class="feature-system__index" aria-hidden="true">01</span>
+            <h3>Fully Automated Booking</h3>
+          </div>
+          <ul class="feature-system__list">
+            <li><strong>End-to-end automation</strong> — complete booking process from login to final submission, with no manual steps required.</li>
+            <li><strong>Automatic login &amp; session handling</strong> — logs into accounts and manages sessions across the entire workflow.</li>
+            <li><strong>Automatic OTP handling</strong> — intercepts and processes one-time passwords during the booking flow.</li>
+            <li><strong>Automatic CAPTCHA solving</strong> — integrated CAPTCHA processing at every stage of the booking process.</li>
+            <li><strong>Automatic slot detection</strong> — continuously scans for available appointment slots across all configured portals.</li>
+            <li><strong>Automatic date &amp; time selection</strong> — picks the preferred available slot as soon as it is detected.</li>
+            <li><strong>Automatic form filling</strong> — completes all required fields and booking questions without human input.</li>
+            <li><strong>Automatic submit &amp; booking</strong> — submits the application and completes the booking process automatically.</li>
+            <li><strong>One-click automation</strong> — start the entire workflow with a single action.</li>
+          </ul>
+        </article>
+
+        <article class="feature-system">
+          <div class="feature-system__head">
+            <span class="feature-system__index" aria-hidden="true">02</span>
+            <h3>Proxy &amp; Connection Management</h3>
+          </div>
+          <ul class="feature-system__list">
+            <li><strong>Built-in Proxy Generator</strong> — generate and manage proxies directly inside the application, no external tools needed.</li>
+            <li><strong>Automatic IP rotation</strong> — smart IP rotation for seamless connection management across all sessions.</li>
+            <li><strong>BLS / VFS / TLS support</strong> — automated booking across all major supported centers and countries.</li>
+            <li><strong>Selfie &amp; Biometric Bypass</strong> — handles live camera stream interception for portals requiring photo verification.</li>
+            <li><strong>Cloudflare bypass</strong> — browser spoofing to clear Cloudflare v2 challenges automatically.</li>
+          </ul>
+        </article>
+
+        <article class="feature-system">
+          <div class="feature-system__head">
+            <span class="feature-system__index" aria-hidden="true">03</span>
+            <h3>Account &amp; Team Management</h3>
+          </div>
+          <ul class="feature-system__list">
+            <li><strong>Multi-account management</strong> — manage multiple accounts simultaneously from one central dashboard.</li>
+            <li><strong>Team system</strong> — share the platform with your office or team and manage accounts and files together.</li>
+            <li><strong>File &amp; account management</strong> — keep all accounts, files, and applicant data organized in one place.</li>
+            <li><strong>Team permissions</strong> — control access and permissions for each individual team member.</li>
+            <li><strong>Session management</strong> — efficiently manage account sessions and active workflows at scale.</li>
+          </ul>
+        </article>
+
+        <article class="feature-system">
+          <div class="feature-system__head">
+            <span class="feature-system__index" aria-hidden="true">04</span>
+            <h3>Platform &amp; Infrastructure</h3>
+          </div>
+          <ul class="feature-system__list">
+            <li><strong>Live dashboard</strong> — monitor accounts, tasks, slots, bookings, and system status in real time.</li>
+            <li><strong>Smart notifications</strong> — receive instant alerts for important events and booking status changes.</li>
+            <li><strong>Desktop application</strong> — a full desktop app, not a basic script or browser extension.</li>
+            <li><strong>SaaS infrastructure</strong> — centralized system with synchronization and continuous updates.</li>
+            <li><strong>Scalable architecture</strong> — built for agencies and teams managing large numbers of accounts simultaneously.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OFFICE OPERATIONS LAYER ============ -->
+  <section class="section office" id="office">
+    <div class="office__glow" aria-hidden="true"></div>
+    <div class="section__inner">
+      <div class="section__head">
+        <p class="eyebrow eyebrow--accent">The second layer</p>
+        <h2 class="section__title">Booking Auto Bot isn't just a slot checker.</h2>
+        <p class="section__text section__text--wide">
+          Every install includes a complete Office Operations layer — built for agencies managing
+          client cases alongside their monitoring sessions.
+        </p>
+      </div>
+
+      <div class="office-grid">
+        <div class="office-item">
+          <h3>Applications</h3>
+          <p>Client case management with a full dossier per applicant — overview, checklist, documents, financials and contact log.</p>
+        </div>
+        <div class="office-item">
+          <h3>Appointments</h3>
+          <p>Appointment scheduling and management, with a waiting list for cases pending a slot.</p>
+        </div>
+        <div class="office-item">
+          <h3>Documents</h3>
+          <p>A document vault per case for uploading and attaching client paperwork.</p>
+        </div>
+        <div class="office-item">
+          <h3>Payments</h3>
+          <p>Invoicing, payment recording, refund management and daily turnover reporting.</p>
+        </div>
+        <div class="office-item">
+          <h3>Staff</h3>
+          <p>Staff user management with roles, permissions and smart case assignment.</p>
+        </div>
+        <div class="office-item">
+          <h3>Reports</h3>
+          <p>Metrics, returning clients, missing documents, audit logs and global search.</p>
+        </div>
+        <div class="office-item">
+          <h3>Printing Center</h3>
+          <p>Print center functionality for case documentation.</p>
+        </div>
+        <div class="office-item">
+          <h3>Backup Vault</h3>
+          <p>Case-level file vault with path-traversal protection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section" id="how">
+    <div class="section__inner">
+      <div class="section__head">
+        <p class="eyebrow">Getting started</p>
+        <h2 class="section__title">From install to first alert.</h2>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step__num">01</span>
+          <h3>Install &amp; configure</h3>
+          <p>Run <code>BookingAutoBot-Setup.exe</code> and follow the six-step Setup Wizard — language, country, providers, notifications, and your first account.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">02</span>
+          <h3>Launch monitoring</h3>
+          <p>Add proxy nodes, set your captcha service, and start automation — sessions run headlessly in the background per account.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">03</span>
+          <h3>Get the alert</h3>
+          <p>The moment a slot opens, Telegram and your desktop notify you — while client cases stay tracked in the Office layer.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ DOWNLOAD ============ -->
+  <section class="section download" id="download">
+    <div class="section__inner">
+      <div class="download-panel">
+        <div class="download-panel__copy">
+          <p class="eyebrow">Get the app</p>
+          <h2 class="section__title">Download Booking Auto Bot for Windows.</h2>
+          <p class="section__text">
+            A self-contained Windows installer. No account required to install — activation is
+            handled with a serial key after purchase.
+          </p>
+
+          <dl class="download-facts">
+            <div><dt>Installer</dt><dd><code>BookingAutoBot-Setup.exe</code></dd></div>
+            <div><dt>Current version</dt><dd><code>v2.3.10</code></dd></div>
+            <div><dt>Platform</dt><dd>Windows desktop</dd></div>
+            <div><dt>Distribution</dt><dd>GitHub Releases</dd></div>
+          </dl>
+
+          <div class="hero__actions">
+            <a href="#" class="btn btn--primary btn--lg" id="downloadBtn" data-download-url>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+              Download for Windows
+            </a>
+            <a href="https://wa.me/201286669272" class="btn btn--ghost btn--lg" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+              Ask about licensing on WhatsApp
+            </a>
+          </div>
+          <p class="download-note">A subscription and activation key are required to run automation. Contact us on Telegram or WhatsApp for licensing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="section__inner section__inner--narrow">
+      <div class="section__head">
+        <p class="eyebrow">Questions</p>
+        <h2 class="section__title">Frequently asked</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What operating system does Booking Auto Bot require?</summary>
+          <p>Windows only. It installs as a native <code>.exe</code> desktop application.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is my data safe?</summary>
+          <p>Credentials and API keys are encrypted locally with AES-256, using a key derived from your device's hardware ID. Core functionality doesn't send data to external servers.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Which visa portals are supported?</summary>
+          <p>BLS International, TLS Contact, VFS Global, Prenotami, GVC World, IVAC, and Goethe-Institut.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Which countries are supported?</summary>
+          <p>18 origin countries: Egypt, Algeria, Morocco, Tunisia, Mauritania, Pakistan, India, Bangladesh, Nepal, Sri Lanka, Malaysia, Indonesia, Philippines, Thailand, Vietnam, United Kingdom, Netherlands, Turkey, and Uzbekistan.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do I get notified when a slot opens?</summary>
+          <p>Via a Telegram bot alert, with Windows desktop banner and sound notifications, and an optional SMTP email backup.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Does it handle CAPTCHAs?</summary>
+          <p>Yes — through 2Captcha, CapMonster Cloud, Anti-Captcha, or a custom API endpoint, with manual, automatic or hybrid solving strategies.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need a subscription?</summary>
+          <p>Yes. Activation and an active subscription are required to run automation. Reach out via Telegram or WhatsApp to arrange licensing.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="nav__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </span>
+      <span>Booking Auto Bot</span>
+    </div>
+
+    <div class="footer__links">
+      <a href="https://t.me/IQROUTER" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://wa.me/201286669272" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="#download">Download</a>
+    </div>
+
+    <p class="footer__copy">&copy; <span id="year"></span> Booking Auto Bot. Windows desktop application.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
