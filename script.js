@@ -18,7 +18,7 @@
      This is the ONLY place the download destination needs to change —
      every "Download for Windows" button reads from it. */
   var CONFIG = {
-    DOWNLOAD_URL: 'https://www.mediafire.com/file/7kgo6odzvu3r4h4/BookingAutoBot-Setup.rar/file',
+    DOWNLOAD_URL: 'https://www.mediafire.com/file/0x4xean1p87k0wt/BookingAutoBot-Setup.rar/file',
     REDUCED_MOTION: window.matchMedia('(prefers-reduced-motion: reduce)').matches
   };
 
