@@ -815,7 +815,7 @@ p{ margin: 0; }
   color: var(--text-muted);
 }
 
-#downloadBtn{ animation: ctaPulse 3.2s ease-in-out infinite; }
+#downloadBtn, #downloadAndroidBtn{ animation: ctaPulse 3.2s ease-in-out infinite; }
 
 /* ---------- 16. FAQ ---------- */
 .faq-list{ display: flex; flex-direction: column; gap: 10px; }
