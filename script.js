@@ -19,6 +19,7 @@
      every "Download for Windows" button reads from it. */
   var CONFIG = {
     DOWNLOAD_URL: 'https://www.mediafire.com/file/71e07r1m4zl0d4s/BookingAutoBot-Setup.rar/file',
+    DOWNLOAD_ANDROID_URL: 'https://www.mediafire.com/file/drinct4uuddpd6m/BookingAutoBot.apk/file',
     REDUCED_MOTION: window.matchMedia('(prefers-reduced-motion: reduce)').matches
   };
 
@@ -50,6 +51,12 @@
   /* ---------- 3. DOWNLOAD LINK WIRING ---------- */
   document.querySelectorAll('[data-download-url], #heroDownloadBtn').forEach(function (btn) {
     btn.setAttribute('href', CONFIG.DOWNLOAD_URL);
+    btn.setAttribute('target', '_blank');
+    btn.setAttribute('rel', 'noopener');
+  });
+
+  document.querySelectorAll('[data-download-android-url], #heroDownloadAndroidBtn').forEach(function (btn) {
+    btn.setAttribute('href', CONFIG.DOWNLOAD_ANDROID_URL);
     btn.setAttribute('target', '_blank');
     btn.setAttribute('rel', 'noopener');
   });
